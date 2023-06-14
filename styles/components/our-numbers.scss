@@ -1,0 +1,45 @@
+#our-numbers {
+    margin-top: 100px;
+
+    #title {
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    #numbers {
+        margin: 50px auto 50px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        background: $white;
+        padding: 50px;
+        border-radius: 30px;
+
+        .number {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .mark {
+                font-size: 60px;
+            }
+         
+            .desc {
+                font-size: 25px;
+            }
+        }
+
+        .seperate {
+            width: 5px;
+            border-radius: 20px;
+            height: auto; 
+            background: rgb(189, 189, 189);
+        }
+    }
+}

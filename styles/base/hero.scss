@@ -1,0 +1,119 @@
+#hero {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+
+    #hero-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        #hero-text {
+            width: 100%;
+            max-width: 45%;
+
+            #header {
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: 500;
+
+                #huge {
+                    font-size: 60px;
+                }
+            }
+
+            #paragraph {
+                font-size: 16px;
+                font-weight: 300;
+                margin-top: 20px;
+            }
+        }
+
+        #hero-img {
+            width: 100%;
+            max-width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                transform: scaleX(-1);
+                width: 100%;
+                max-width: fit-content;
+            }
+
+            #bg-item {
+                box-shadow: 0 0 600px 400px $secondary;
+                width: 1%;
+                height: 1%;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+
+    #interaction {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        #buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+
+            div {
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    background: $orange;
+                    padding: 10px 25px 10px 25px;
+                    border-radius: 14px;
+                    box-shadow: 3px 3px 10px rgb(222, 222, 222);
+                }
+            }
+
+            #learn-more {
+                a {
+                    color: $orange;
+                    border: 1px solid $orange;
+                    background: transparent;
+                }
+            }
+        }
+
+        #app {
+            display: flex;
+            flex-direction: row;
+            gap: 120px;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            padding: 40px 120px 40px 120px;
+            border-radius: 40px;
+            box-shadow: 3px 3px 10px rgb(222, 222, 222);
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                font-size: 24px;
+
+                button {
+                    background: transparent;
+                    border: none;
+                    padding: 10px 20px 10px 20px;
+                    border-radius: 12px;
+                    font-size: 14px;
+                    box-shadow: 3px 3px 10px rgb(222, 222, 222);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+#inventory {
+    margin-top: 100px;
+
+    #title {
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    #items {
+        margin: 50px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        justify-content: center;
+        align-items: center;
+        gap: 130px;
+        row-gap: 30px;
+
+        .car {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .car-image {
+                max-width: 300px;
+                width: 100%;
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+
+            .transform-car-img {
+                transform: scaleX(-1);
+            }
+
+            .car-title {
+                font-size: 20px;
+            }
+
+            .car-props {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                div {
+                    background: $white;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+            }
+
+            .car-book {
+                width: 100%;
+                
+                a {
+                    color: $orange;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 10px;
+                    background-color: $white;
+                    text-align: center;
+                    display: block; 
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

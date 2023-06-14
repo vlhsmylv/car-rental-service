@@ -1,0 +1,16 @@
+@import "@/styles/exe.scss";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: $base-color;
+}
+
+.text-orange {
+    color: $orange;
+}

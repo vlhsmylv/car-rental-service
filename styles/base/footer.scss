@@ -1,0 +1,82 @@
+footer {
+    #main {
+        background: $orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 100px;
+
+        #logo {
+            font-size: 40px;
+            font-weight: 500;
+            color: $white;
+        }
+
+        .link-set {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .title {
+                color: $white;
+                font-size: 20px;
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .link-container {
+                    a {
+                        color: $white;
+                        font-weight: 200;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #bottom {
+        background: $white;
+        padding: 20px 100px 20px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        #credits {
+            font-size: 20px;
+            font-weight: 500;
+
+            a {
+                color: black;
+            }
+        }
+
+        #social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .social-box {
+                a {
+                    color: $orange;
+                    display: flex;
+                    width: 64px;
+                    height: 64px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 30px;
+                    border-radius: 50%;
+                    padding: 20px;
+                    background: $secondary;
+                }
+            }
+        }
+    }
+}
