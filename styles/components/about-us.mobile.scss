@@ -1,0 +1,24 @@
+@media screen and (max-width: 1400px) {
+    #about-us {
+        #about {
+            flex-direction: column;
+            gap: 10px;
+            margin-left: auto;
+            margin-right: auto;
+
+            #left {
+                max-width: 100%;
+
+                img {
+                    transform: none;
+                }
+            }
+
+            #right {
+                text-align: left;
+                max-width: 100%;
+            }
+
+        }
+    }
+}

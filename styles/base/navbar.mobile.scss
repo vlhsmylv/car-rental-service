@@ -1,0 +1,80 @@
+nav {
+    #mobile {
+        display: none;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 30px;
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        #navigation,
+        #user-interaction {
+            display: none;
+        }
+
+        #mobile {
+            display: block;
+
+            #open-mobile-menu {
+                color: black;
+            }
+
+            #offcanvas-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                z-index: 1000;
+                background: rgba($secondary, $alpha: .90);
+                height: 100%;
+                margin: 0px;
+                position: fixed;
+                right: 0;
+                top: 0;
+                max-width: 400px;
+                width: 100%;
+                padding: 40px;
+
+                #close-mobile-menu {
+                    display: flex;
+                    justify-content: end;
+                }
+
+                #user-interaction-mobile {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    #sign-up-button {
+                        a {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            
+                .active {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        #mobile {
+            #offcanvas-menu {
+                max-width: 100%;
+                z-index: -1;
+            }
+        }
+    }
+}

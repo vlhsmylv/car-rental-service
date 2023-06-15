@@ -1,0 +1,108 @@
+@media screen and (max-width: 1500px) {
+    #contact {
+        #interaction {
+            flex-direction: column;
+
+            #contact-infos {
+                max-width: 50%;
+                width: 100%;
+            }
+
+            #interactive {
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact {
+        #interaction {
+            flex-direction: column;
+
+            #contact-infos {
+                max-width: 70%;
+                width: 100%;
+            }
+
+            #interactive {
+                max-width: 70%;
+                form {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #contact {
+        #interaction {
+            #contact-infos {
+                max-width: 90%;
+                width: 100%;
+            }
+
+            #interactive {
+                max-width: 90%;
+
+
+                form {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contact {
+        #interaction {
+            #contact-infos {
+                max-width: 90%;
+                width: 100%;
+           
+                .contact-info {
+                    .right {
+                        .title {
+                            font-size: 20px;
+                        }
+
+                        .desc {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            #interactive {
+                form {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #contact {
+        #interaction {
+            #contact-infos {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            #interactive {
+                max-width: 100%;
+                form {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 930px) {
+    #our-numbers {
+        #numbers {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px !important;
+            width: 100%;
+            gap: 40px;
+
+            .seperate {
+                width: auto;
+                border-radius: 20px;
+                height: 5px;
+                background: rgb(189, 189, 189);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #our-numbers {
+        #numbers {
+            max-width: 1000px; 
+        }
+    }
+}

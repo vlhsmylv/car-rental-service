@@ -2,9 +2,21 @@
 
 @import "_variables";
 @import "@/styles/base/navbar.scss";
-@import "@/styles/base/hero.scss";
 @import "@/styles/base/footer.scss";
+@import "@/styles/components/hero.scss";
 @import "@/styles/components/inventory.scss";
 @import "@/styles/components/our-numbers.scss";
 @import "@/styles/components/why-choose-us.scss";
 @import "@/styles/components/subs.scss";
+@import "@/styles/components/about-us.scss";
+@import "@/styles/components/contact.scss";
+
+@import "@/styles/base/navbar.mobile.scss";
+@import "@/styles/base/footer.mobile.scss";
+@import "@/styles/components/hero.mobile.scss";
+@import "@/styles/components/inventory.mobile.scss";
+@import "@/styles/components/our-numbers.mobile.scss";
+@import "@/styles/components/why-choose-us.mobile.scss";
+@import "@/styles/components/subs.mobile.scss";
+@import "@/styles/components/about-us.mobile.scss";
+@import "@/styles/components/contact.mobile.scss";

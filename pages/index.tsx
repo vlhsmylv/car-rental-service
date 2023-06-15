@@ -9,15 +9,13 @@ import Footer from "@/components/base/Footer";
 const Index = () => {
   return (
     <>
-      <Navbar />
-      <Hero /> 
+      <Hero />
       <Inventory />
       <OurNumbers />
       <WhyChooseUs />
       <Subs />
-      <Footer />
-    </>   
-  )
-}
+    </>
+  );
+};
 
 export default Index;

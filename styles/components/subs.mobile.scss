@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px) {
+    #subs {
+        #left {
+            max-width: 100%;
+        } 
+
+        #right {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #subs {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #subs {
+        #left {
+            #interaction {
+                form {
+                    input {
+                        width: 100%;
+                    }
+                    
+                    button {
+                        max-width: 150px;
+                        padding: 0px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
