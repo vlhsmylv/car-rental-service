@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Inventory = () => {
+  const [showMore, setShowMore] = useState(false);
+
   const Cars = [
     {
       image: "dodge-charger.png",
@@ -22,7 +26,7 @@ const Inventory = () => {
       year: "2009",
       hp: "210",
       transmission: "Manual",
-      transform: true
+      transform: true,
     },
     {
       image: "toyota-corolla.png",
@@ -46,7 +50,31 @@ const Inventory = () => {
       year: "2012",
       hp: "180",
       transmission: "Autom.",
-      transform: true
+      transform: true,
+    },
+    {
+      image: "dodge-charger.png",
+      title: "Dodge Charger",
+      year: "2018",
+      hp: "700",
+      transmission: "Autom.",
+      transform: true,
+    },
+    {
+      image: "mercedes-e-class.png",
+      title: "Mercedes E class",
+      year: "2016",
+      hp: "300",
+      transmission: "Autom.",
+      transform: true,
+    },
+    {
+      image: "volkswagen-passat.png",
+      title: "Volkswagen Passat",
+      year: "2009",
+      hp: "210",
+      transmission: "Manual",
+      transform: true,
     },
   ];
 
@@ -56,7 +84,7 @@ const Inventory = () => {
         <span className="text-orange">latest</span> inventory
       </div>
       <div id="items">
-        {Cars.map((car, i) => (
+        {Cars.slice(0, showMore ? Cars.length : 6).map((car, i) => (
           <div key={i} className="car">
             <div
               className={`car-image ${
@@ -77,6 +105,19 @@ const Inventory = () => {
           </div>
         ))}
       </div>
+      {showMore ? (
+        <></>
+      ) : (
+        <div id="show-more-button">
+          <button
+            onClick={() => {
+              setShowMore(true);
+            }}
+          >
+            Show More
+          </button>
+        </div>
+      )}
     </section>
   );
 };

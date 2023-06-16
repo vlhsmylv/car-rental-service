@@ -69,10 +69,10 @@ const Navbar = () => {
         id={currentlyMobile ? "user-interaction-mobile" : "user-interaction"}
       >
         <div id="login-button">
-          <a href="/login">Login</a>
+          <a href="/#">Login</a>
         </div>
         <div id="sign-up-button">
-          <a href="/sign-up">Sign Up</a>
+          <a href="/#">Sign Up</a>
         </div>
       </div>
     );
